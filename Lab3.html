@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Lab 3 Practice</title>
+    <link rel="stylesheet" href="Lab3.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-footer">
+        <h1>Lab 3 - Rock-Paper-Scissors Game</h1>
+    </div>
+
+    <!-- Navigation -->
+    <ul class="nav">
+        <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="content">
+            <h2>Play the Game!</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required
+                    oninvalid="this.setCustomValidity('Name is required')"
+                    oninput="this.setCustomValidity('')">
+                <label for="choice">Your Choice:</label>
+                <select id="choice" name="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Play!">
+            </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <p>You must choose Rock, Paper, or Scissors.</p>
+            <h3>Rules to Play:</h3>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="header-footer">
+        <h1>Good Luck! ⭐️</h1>
+    </div>
+</body>
+</html>
