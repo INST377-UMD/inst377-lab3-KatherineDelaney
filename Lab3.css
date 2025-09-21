@@ -1,0 +1,95 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #e1e1f3;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header + Footer */
+.header-footer {
+    background-color: #5151e5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Navigation */
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #3d3a3a;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #020202;
+}
+
+/* Main Content + Sidebar Container */
+.main {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Main Content */
+.content {
+    float: left;
+    width: 70%; 
+    background-color: #ffffff;
+    margin: 5px; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Sidebar */
+.sidebar {
+    float: right;
+    width: 25%; 
+    background-color: #e99ee3;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease;
+}
+
+.sidebar:hover {
+    background-color: #e446d4;
+}
+
+/* Form Input Focus */
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    transition: width 0.3s ease;
+}
+
+input[type="text"]:focus {
+    width: 250px;
+}
+
+/* Clear floats after main */
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
